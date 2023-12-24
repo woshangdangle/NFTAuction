@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "canisters": {
+    "DIP721": {
+      "type": "motoko",
+      "main": "src/NFTAuction_backend/NFTAution/dip721-nft-container/src/Main.mo"
+    },
+    "ICRC2": {
+      "main": "src/NFTAuction_backend/NFTAution/ICRC2/ICRC2.mo",
+      "type": "motoko"
+    },
+    "NFTAuction": {
+      "main": "src/NFTAuction_backend/NFTAution/NFTAution.mo",
+      "type": "motoko"
+    }
+
+  },
+
+  "defaults": { "build": { } }, "dfx": "0.14.3", "networks": { "local": { "bind": "127.0.0.1:8822", "type": "ephemeral" } },
+  "output_env_file": ".env"
+}
